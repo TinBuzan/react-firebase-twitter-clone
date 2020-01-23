@@ -1,0 +1,77 @@
+[debug] [2020-01-23T03:26:40.327Z] ----------------------------------------------------------------------
+[debug] [2020-01-23T03:26:40.329Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tinbu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-01-23T03:26:40.329Z] CLI Version:   7.12.1
+[debug] [2020-01-23T03:26:40.329Z] Platform:      win32
+[debug] [2020-01-23T03:26:40.329Z] Node Version:  v10.16.3
+[debug] [2020-01-23T03:26:40.330Z] Time:          Wed Jan 22 2020 22:26:40 GMT-0500 (Eastern Standard Time)
+[debug] [2020-01-23T03:26:40.330Z] ----------------------------------------------------------------------
+[debug] [2020-01-23T03:26:40.330Z] 
+[debug] [2020-01-23T03:26:40.341Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-23T03:26:40.341Z] > authorizing via signed-in user
+[debug] [2020-01-23T03:26:40.341Z] [iam] checking project re-fb-twitter for permissions ["firebase.projects.get"]
+[debug] [2020-01-23T03:26:40.343Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-23T03:26:40.343Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-23T03:26:40.522Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-23T03:26:40.536Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/re-fb-twitter:testIamPermissions  
+
+[debug] [2020-01-23T03:26:40.806Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-23T03:26:40.808Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/re-fb-twitter  
+ 
+[debug] [2020-01-23T03:26:41.075Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone'...
+[info] 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions" for Cloud Functions...
+[debug] [2020-01-23T03:26:43.668Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-23T03:26:43.668Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-23T03:26:43.669Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-23T03:26:43.670Z] [worker-~diagnostic~-aec8250c-e278-4428-a2ab-b20d84b837cf]: Assigning socketPath: \\?\pipe\C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions\2868
+[debug] [2020-01-23T03:26:43.670Z] [worker-~diagnostic~-aec8250c-e278-4428-a2ab-b20d84b837cf]: BUSY
+[debug] [2020-01-23T03:26:44.042Z] [runtime-status] [2868] Functions runtime initialized. {"cwd":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions","node_version":"10.16.3"}
+[debug] [2020-01-23T03:26:44.043Z] [runtime-status] [2868] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-23T03:26:44.046Z] [runtime-status] [2868] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-23T03:26:44.047Z] [runtime-status] [2868] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-23T03:26:44.048Z] [runtime-status] [2868] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] +  functions[api]: http function initialized (http://localhost:5000/re-fb-twitter/us-central1/api).
+[info] i  functions[createNotificationOnLike]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[deleteNotificationOnUnlike]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[createNotificationOnComment]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[onUserImageChange]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[onScreamDelete]: function ignored because the firestore emulator does not exist or is not running.
+[debug] [2020-01-23T03:26:44.847Z] [worker-~diagnostic~-aec8250c-e278-4428-a2ab-b20d84b837cf]: IDLE
+[debug] [2020-01-23T05:11:25.983Z] File C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions\handlers\users.js changed, reloading triggers
+[debug] [2020-01-23T05:11:26.986Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-23T05:11:26.986Z] [worker-~diagnostic~-aec8250c-e278-4428-a2ab-b20d84b837cf]: FINISHING
+[debug] [2020-01-23T05:11:27.008Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-23T05:11:27.008Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-23T05:11:27.008Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-23T05:11:27.008Z] [worker-~diagnostic~-9724b885-f2c6-4a58-aebd-1feb131744b8]: Assigning socketPath: \\?\pipe\C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions\17968
+[debug] [2020-01-23T05:11:27.009Z] [worker-~diagnostic~-9724b885-f2c6-4a58-aebd-1feb131744b8]: BUSY
+[debug] [2020-01-23T05:11:27.013Z] [worker-~diagnostic~-aec8250c-e278-4428-a2ab-b20d84b837cf]: exited
+[debug] [2020-01-23T05:11:27.014Z] [worker-~diagnostic~-aec8250c-e278-4428-a2ab-b20d84b837cf]: FINISHED
+[debug] [2020-01-23T05:11:27.447Z] [runtime-status] [17968] Functions runtime initialized. {"cwd":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions","node_version":"10.16.3"}
+[debug] [2020-01-23T05:11:27.448Z] [runtime-status] [17968] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-23T05:11:27.451Z] [runtime-status] [17968] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-23T05:11:27.452Z] [runtime-status] [17968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-23T05:11:27.453Z] [runtime-status] [17968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-23T05:11:28.108Z] [worker-~diagnostic~-9724b885-f2c6-4a58-aebd-1feb131744b8]: IDLE
+[debug] [2020-01-23T05:13:27.073Z] File C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions\handlers\users.js changed, reloading triggers
+[debug] [2020-01-23T05:13:28.074Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-23T05:13:28.075Z] [worker-~diagnostic~-9724b885-f2c6-4a58-aebd-1feb131744b8]: FINISHING
+[debug] [2020-01-23T05:13:28.076Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-23T05:13:28.088Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-23T05:13:28.088Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-23T05:13:28.089Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-23T05:13:28.089Z] [worker-~diagnostic~-328034ba-fddc-42d9-8699-c51e95f2beb4]: Assigning socketPath: \\?\pipe\C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions\1800
+[debug] [2020-01-23T05:13:28.089Z] [worker-~diagnostic~-328034ba-fddc-42d9-8699-c51e95f2beb4]: BUSY
+[debug] [2020-01-23T05:13:28.101Z] [worker-~diagnostic~-9724b885-f2c6-4a58-aebd-1feb131744b8]: exited
+[debug] [2020-01-23T05:13:28.101Z] [worker-~diagnostic~-9724b885-f2c6-4a58-aebd-1feb131744b8]: FINISHED
+[debug] [2020-01-23T05:13:28.579Z] [runtime-status] [1800] Functions runtime initialized. {"cwd":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions","node_version":"10.16.3"}
+[debug] [2020-01-23T05:13:28.581Z] [runtime-status] [1800] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-23T05:13:28.585Z] [runtime-status] [1800] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-23T05:13:28.586Z] [runtime-status] [1800] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-23T05:13:28.587Z] [runtime-status] [1800] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-23T05:13:29.455Z] [worker-~diagnostic~-328034ba-fddc-42d9-8699-c51e95f2beb4]: IDLE

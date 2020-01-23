@@ -38,7 +38,7 @@ exports.signup = (req, res) => {
         handle: newUser.handle,
         email: newUser.email,
         createdAt: new Date().toISOString(),
-        imageUrl: `https://firebasestorage.googleapis.com/v0/b/${fbConfig.storageBucket}/o/${noImg}?alt=media/`,
+        imageUrl: `https://firebasestorage.googleapis.com/v0/b/${fbConfig.storageBucket}/o/${noImg}?alt=media`,
         userId
       }
       return db.doc(`/users/${newUser.handle}`).set(userCredentials)
@@ -210,7 +210,7 @@ exports.uploadImage = (req, res) => {
       }
     })
     .then(() => {
-      const imageUrl = `https://firebasestorage.googleapis.com/v0/b/${fbConfig.storageBucket}/o/${imageFileName}?alt=media/`;
+      const imageUrl = `https://firebasestorage.googleapis.com/v0/b/${fbConfig.storageBucket}/o/${imageFileName}?alt=media`;
       return db.doc(`users/${req.user.handle}`).update({ imageUrl })
     })
     .then(() => {
