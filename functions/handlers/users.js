@@ -75,7 +75,6 @@ exports.login = (req, res) => {
       return res.json({ token });
     })
     .catch(err => {
-      console.error(err);
       return res.status(403).json({ error: 'Wrong credentials, please try again'});
     })
 }
@@ -99,7 +98,6 @@ exports.getAuthenticatedUser = (req, res) => {
       })
       return db.collection('notifications').where('recipient', '==', req.user.handle)
         .orderBy('createdAt', 'desc').limit(10).get()
-      return res.json(userData);
     })
     .then(data => {
       userData.notifications = [];
