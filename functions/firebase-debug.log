@@ -1,0 +1,129 @@
+[debug] [2020-01-26T07:47:09.078Z] ----------------------------------------------------------------------
+[debug] [2020-01-26T07:47:09.081Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tinbu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-01-26T07:47:09.081Z] CLI Version:   7.12.1
+[debug] [2020-01-26T07:47:09.081Z] Platform:      win32
+[debug] [2020-01-26T07:47:09.081Z] Node Version:  v10.16.3
+[debug] [2020-01-26T07:47:09.082Z] Time:          Sun Jan 26 2020 02:47:09 GMT-0500 (Eastern Standard Time)
+[debug] [2020-01-26T07:47:09.082Z] ----------------------------------------------------------------------
+[debug] [2020-01-26T07:47:09.082Z] 
+[debug] [2020-01-26T07:47:09.101Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-26T07:47:09.102Z] > authorizing via signed-in user
+[debug] [2020-01-26T07:47:09.102Z] [iam] checking project re-fb-twitter for permissions ["firebase.projects.get"]
+[debug] [2020-01-26T07:47:09.104Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-26T07:47:09.104Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-26T07:47:09.276Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-26T07:47:09.282Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/re-fb-twitter:testIamPermissions  
+
+[debug] [2020-01-26T07:47:09.534Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-26T07:47:09.539Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/re-fb-twitter  
+ 
+[debug] [2020-01-26T07:47:09.861Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone'...
+[info] 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions" for Cloud Functions...
+[debug] [2020-01-26T07:47:12.433Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-26T07:47:12.433Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-26T07:47:12.433Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-26T07:47:12.434Z] [worker-~diagnostic~-e3f53b21-5a5a-4585-9e91-e92b2961f751]: Assigning socketPath: \\?\pipe\C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions\20680
+[debug] [2020-01-26T07:47:12.434Z] [worker-~diagnostic~-e3f53b21-5a5a-4585-9e91-e92b2961f751]: BUSY
+[debug] [2020-01-26T07:47:12.806Z] [runtime-status] [20680] Functions runtime initialized. {"cwd":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions","node_version":"10.16.3"}
+[debug] [2020-01-26T07:47:12.807Z] [runtime-status] [20680] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-26T07:47:12.810Z] [runtime-status] [20680] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-26T07:47:12.814Z] [runtime-status] [20680] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-26T07:47:12.815Z] [runtime-status] [20680] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] +  functions[api]: http function initialized (http://localhost:5000/re-fb-twitter/us-central1/api).
+[info] i  functions[createNotificationOnLike]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[deleteNotificationOnUnlike]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[createNotificationOnComment]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[onUserImageChange]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[onScreamDelete]: function ignored because the firestore emulator does not exist or is not running.
+[debug] [2020-01-26T07:47:14.442Z] [worker-~diagnostic~-e3f53b21-5a5a-4585-9e91-e92b2961f751]: IDLE
+[debug] [2020-01-26T07:48:46.450Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-26T07:48:46.451Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-26T07:48:46.452Z] Accepted request POST /re-fb-twitter/us-central1/api/login --> api
+[debug] [2020-01-26T07:48:46.461Z] [worker-pool] addWorker(api)
+[debug] [2020-01-26T07:48:46.461Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-26T07:48:46.461Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-26T07:48:46.462Z] [worker-api-eec7431a-5e08-4aff-add3-d568704d9354]: Assigning socketPath: \\?\pipe\C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions\16000
+[debug] [2020-01-26T07:48:46.462Z] [worker-api-eec7431a-5e08-4aff-add3-d568704d9354]: BUSY
+[debug] [2020-01-26T07:48:46.900Z] [runtime-status] [16000] Functions runtime initialized. {"cwd":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions","node_version":"10.16.3"}
+[debug] [2020-01-26T07:48:46.901Z] [runtime-status] [16000] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-26T07:48:46.905Z] [runtime-status] [16000] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-26T07:48:46.907Z] [runtime-status] [16000] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-26T07:48:46.908Z] [runtime-status] [16000] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-26T07:48:47.706Z] [runtime-status] [16000] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-26T07:48:47.708Z] [runtime-status] [16000] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-26T07:48:47.708Z] [runtime-status] [16000] Running api in mode HTTPS
+[debug] [2020-01-26T07:48:47.711Z] [runtime-status] [16000] Attempting to listen to socketPath: \\?\pipe\C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions\16000
+[debug] [2020-01-26T07:48:47.715Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-26T07:48:47.760Z] [runtime-status] [16000] Ephemeral server handling POST request
+[debug] [2020-01-26T07:48:47.789Z] [runtime-status] [16000] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-26T07:48:48.230Z] [worker-api-eec7431a-5e08-4aff-add3-d568704d9354]: IDLE
+[debug] [2020-01-26T07:48:48.230Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-26T07:56:58.945Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-26T07:56:58.945Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-26T07:56:58.946Z] Accepted request GET /re-fb-twitter/us-central1/api/user/user --> api
+[debug] [2020-01-26T07:56:58.946Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-26T07:56:58.946Z] [worker-api-eec7431a-5e08-4aff-add3-d568704d9354]: Assigning socketPath: \\?\pipe\C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions\16000
+[debug] [2020-01-26T07:56:58.946Z] [worker-api-eec7431a-5e08-4aff-add3-d568704d9354]: BUSY
+[debug] [2020-01-26T07:56:58.948Z] [runtime-status] [16000] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-26T07:56:58.956Z] [runtime-status] [16000] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-26T07:56:58.957Z] [runtime-status] [16000] Running api in mode HTTPS
+[debug] [2020-01-26T07:56:58.957Z] [runtime-status] [16000] Attempting to listen to socketPath: \\?\pipe\C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions\16000
+[debug] [2020-01-26T07:56:58.960Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-26T07:56:58.963Z] [runtime-status] [16000] Ephemeral server handling GET request
+[debug] [2020-01-26T07:56:58.968Z] [runtime-status] [16000] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-26T07:56:59.668Z] [worker-api-eec7431a-5e08-4aff-add3-d568704d9354]: IDLE
+[debug] [2020-01-26T07:56:59.668Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-26T09:03:50.041Z] ----------------------------------------------------------------------
+[debug] [2020-01-26T09:03:50.043Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tinbu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-01-26T09:03:50.043Z] CLI Version:   7.12.1
+[debug] [2020-01-26T09:03:50.043Z] Platform:      win32
+[debug] [2020-01-26T09:03:50.043Z] Node Version:  v10.16.3
+[debug] [2020-01-26T09:03:50.044Z] Time:          Sun Jan 26 2020 04:03:50 GMT-0500 (Eastern Standard Time)
+[debug] [2020-01-26T09:03:50.044Z] ----------------------------------------------------------------------
+[debug] [2020-01-26T09:03:50.044Z] 
+[debug] [2020-01-26T09:03:50.053Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-26T09:03:50.054Z] > authorizing via signed-in user
+[debug] [2020-01-26T09:03:50.054Z] [iam] checking project re-fb-twitter for permissions ["firebase.projects.get"]
+[debug] [2020-01-26T09:03:50.056Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-26T09:03:50.056Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-26T09:03:50.234Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-26T09:03:50.264Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/re-fb-twitter:testIamPermissions  
+
+[debug] [2020-01-26T09:03:50.550Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-26T09:03:50.555Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/re-fb-twitter  
+ 
+[debug] [2020-01-26T09:03:50.837Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone'...
+[info] 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions" for Cloud Functions...
+[debug] [2020-01-26T09:03:53.399Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-26T09:03:53.400Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-26T09:03:53.400Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-26T09:03:53.400Z] [worker-~diagnostic~-492cd75f-cdfd-43eb-aeff-9a4af5de3e92]: Assigning socketPath: \\?\pipe\C:\Users\tinbu\Documents\Code\react-firebase-twitter-clone\functions\18348
+[debug] [2020-01-26T09:03:53.401Z] [worker-~diagnostic~-492cd75f-cdfd-43eb-aeff-9a4af5de3e92]: BUSY
+[debug] [2020-01-26T09:03:53.939Z] [runtime-status] [18348] Functions runtime initialized. {"cwd":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions","node_version":"10.16.3"}
+[debug] [2020-01-26T09:03:53.940Z] [runtime-status] [18348] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-26T09:03:53.943Z] [runtime-status] [18348] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-01-26T09:03:53.945Z] [runtime-status] [18348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-01-26T09:03:53.945Z] [runtime-status] [18348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\tinbu\\Documents\\Code\\react-firebase-twitter-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] +  functions[api]: http function initialized (http://localhost:5000/re-fb-twitter/us-central1/api).
+[info] i  functions[createNotificationOnLike]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[deleteNotificationOnUnlike]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[createNotificationOnComment]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[onUserImageChange]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[onScreamDelete]: function ignored because the firestore emulator does not exist or is not running.
+[debug] [2020-01-26T09:03:54.857Z] [worker-~diagnostic~-492cd75f-cdfd-43eb-aeff-9a4af5de3e92]: IDLE
